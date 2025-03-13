@@ -69,3 +69,61 @@ class Sample8 {
 // 奇数なら
 
 // 奇数です と出力する
+class Sample8 {
+    public static void main(String[] args) {
+        int speed = 120;
+        int limit = 60;
+         System.out.println(speed > limit ? "スピード違反です。" : "法定速度内です。");
+
+        }
+    }
+// 加算
+// for (int i = 0; i < 100; i += 10) {
+//     System.out.print(i + " ");
+// }
+// // 出力内容) 0 10 20 30 40 50 60 70 80 90
+
+// // 減算
+// for (int i = 10; i > 0; i -= 2) {
+//     System.out.print(i + " ");
+// }
+// // 出力内容) 10 8 6 4 2
+
+// // 乗算
+// for (int i = 1; i < 100; i *= 2) {
+//     System.out.print(i + " ");
+// }
+// // 出力内容) 1 2 4 8 16 32 64
+
+// // 除算
+// for (int i = 100; i > 0; i /= 10) {
+//     System.out.print(i + " ");
+// }
+// // 出力内容) 100 10 1
+
+class Sample8 {
+    public static void main(String[] args) {
+        String text = "abc";
+        for (int i = 0; i < 5; i++) {
+            System.out.println(text);
+        }
+    }
+}
+class Sample2 {
+    public static void main(String[] args) {
+        for (int i = 40; i <= 50; i++) {
+            if (i % 2 == 1) {
+                System.out.print(i + " ");
+            }
+        }
+    }
+}
+class Sample2 {
+    public static void main(String[] args) {
+        for (int i = 20; i <= 50; i++) {
+            if (i % 2 == 0 && (i / 2) % 2 == 1)  {
+                System.out.print(i + " ");
+            }
+        }
+    }
+}
