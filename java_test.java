@@ -1,25 +1,18 @@
-class Advanced6 {
-    public static void main(String [] args) {
+//java test
+import static org.junit.Assert.assertEquals;
+import org.junit.Test;
 
-        int width = 5;
-        int height = 5;
-        int start = (width - 1) / 2;
-        int end = start;
+public class CalculatorTest {
+    @test
+    public void totalSum() {
+         Calculator calculator = new Calculator();
+        int expected = 5;
 
-        for (int i = 0; i < height; i++) {
-            for (int j = 0; j < width; j++) {
-                System.out.print(j >= start && j <= end ? 0 : " ");
-            }
+        // Act
+        int result = calculator.sum(3, 2);
 
-            System.out.print("\n");
+        // Assert
+        assertEquals(expected, result);
 
-            if (i < (height - 1) / 2) {
-                start --;
-                end ++;
-            } else {
-                start ++;
-                end --;
-            }
-        }
     }
 }
